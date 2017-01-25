@@ -47,9 +47,4 @@ class captchaController extends Controller
         imagettftext($image, 30, 0, 10, 40, $color, 'sahel/Sahel.ttf', $code);
         return response((string)imagepng($image))->header('Content-Type', 'image/png');
     }
-
-    public function cookie(Request $request){
-
-        dd($request->cookie('asdasdsad'));
-    }
 }
