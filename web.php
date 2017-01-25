@@ -10,5 +10,6 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-//Route::get('/as' . 'syncController@getSync');
-Route::get('/captcha', 'captchaController@create');
+
+Route::get('/captcha', 'captchaController@create'); // put this route to your routes file
+ 
